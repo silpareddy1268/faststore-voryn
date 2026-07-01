@@ -15,7 +15,7 @@ const contactFormResolver = {
 
       try {
         const response = await fetch(
-          "https://playground.vtexcommercestable.com.br/api/dataentities/ContactForm/documents?_schema=contactForm",
+          "https://voryn.vtexcommercestable.com.br/api/dataentities/ContactForm/documents?_schema=contactForm",
           {
             method: "POST",
             headers: {

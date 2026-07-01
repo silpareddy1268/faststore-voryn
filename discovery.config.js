@@ -3,9 +3,9 @@ module.exports = {
     type: 'CP',
   },
   seo: {
-    title: "FastStore Playground",
+    title: "FastStore voryn",
     description: "A fast and performant store framework",
-    titleTemplate: "%s | Playground",
+    titleTemplate: "%s | voryn",
     author: "FastStore",
   },
 
@@ -17,7 +17,7 @@ module.exports = {
 
   // Platform specific configs for API
   api: {
-    storeId: "playground",
+    storeId: "voryn",
     workspace: "master",
     environment: "vtexcommercestable",
     hideUnavailableItems: true,
@@ -48,7 +48,7 @@ module.exports = {
   },
 
   // Production URLs
-  storeUrl: "https://playground.vtex.app",
+  storeUrl: "https://voryn.vtex.app",
   secureSubdomain: "https://secure.vtexfaststore.com/",
   checkoutUrl: "https://secure.vtexfaststore.com/checkout",
   loginUrl: "https://secure.vtexfaststore.com/api/io/login",
@@ -96,7 +96,7 @@ module.exports = {
 
   vtexHeadlessCms: {
     webhookUrls: [
-      "https://playground.myvtex.com/cms-releases/webhook-releases",
+      "https://voryn.myvtex.com/cms-releases/webhook-releases",
     ],
   },
 };
