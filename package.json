@@ -1,6 +1,6 @@
 {
-  "name": "starter.store",
-  "version": "0.23.0",
+  "name": "voryn",
+  "version": "0.1.0",
   "description": "FastStore Base Starter",
   "private": true,
   "scripts": {
@@ -11,7 +11,8 @@
     "test": "faststore test"
   },
   "dependencies": {
-    "@faststore/cli": "^4.1.1",
+    "@faststore/cli": "4.3.0",
+    "@vtex/store-sdk": "^0.373.50",
     "graphql": "^16.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -27,7 +28,7 @@
     "typescript": "^5.9.3"
   },
   "volta": {
-    "node": "24.11.0",
+    "node": "24.0.2",
     "yarn": "1.19.1"
   },
   "author": "VTEX"
