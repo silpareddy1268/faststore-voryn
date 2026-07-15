@@ -10,24 +10,10 @@ export function BuyButtonWithDetails(props: ButtonProps) {
 
   console.log("🚀 ~ PDP context:", context);
 
-  // We will show one of the installments option available if the product has interest free (You should go further and show all available installments options)
-  const installment = context?.data?.product?.availableInstallments[0];
-  const interestFree = (installment?.installmentInterest ?? 1) === 0;
-
   return (
     <section className={styles.buyButtonWithDetails}>
-      {interestFree && (
-        <span>
-          {`${installment.installmentNumber} interest-free installment(s)`}
-          <br />
-          {`of ${priceFormatter(installment.installmentValue)} with ${
-            installment.installmentPaymentSystemName
-          }`}
-        </span>
-      )}
-
       <UIButton {...props} variant="primary">
-        Buy Button
+        silpa Buy Button
       </UIButton>
     </section>
   );
