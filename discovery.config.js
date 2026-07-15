@@ -1,6 +1,7 @@
 module.exports = {
   contentSource: {
     type: 'CP',
+    project:'voryn'
   },
   seo: {
     title: "FastStore voryn",
@@ -17,9 +18,9 @@ module.exports = {
 
   // Platform specific configs for API
   api: {
-    storeId: "voryn",
-    workspace: "master",
-    environment: "vtexcommercestable",
+    storeId: process.env.NEXT_PUBLIC_STORE_ID,
+    workspace: 'master',
+    environment: 'vtexcommercestable',
     hideUnavailableItems: true,
     incrementAddress: false,
   },
@@ -27,12 +28,12 @@ module.exports = {
   // Default session
   session: {
     currency: {
-      code: "BRL",
-      symbol: "R$",
+      code: "USD",
+      symbol: "$",
     },
-    locale: "pt-BR",
+    locale: "en-US",
     channel: '{"salesChannel":1,"regionId":""}',
-    country: "BRA",
+    country: "USA",
     deliveryMode: null,
     addressType: null,
     postalCode: null,
