@@ -100,7 +100,9 @@ module.exports = {
       staleWhileRevalidate: 60,
     },
   },
-
+  localization: {
+    enabled: true,
+},
   vtexHeadlessCms: {
     webhookUrls: [
       "https://voryn.myvtex.com/cms-releases/webhook-releases",
