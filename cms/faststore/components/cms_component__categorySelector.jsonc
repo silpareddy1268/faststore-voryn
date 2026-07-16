@@ -1,0 +1,14 @@
+{
+  "$extends": ["#/$defs/base-component"],
+  "$componentKey": "CategorySelector",
+  "$componentTitle": "Category Selector",
+  "type": "object",
+  "properties": {
+    "selectedCategory": {
+      "type": "string",
+      "title": "Category",
+      "description": "Dynamically loaded category from API"
+      // No "enum": filled dynamically in the React component
+    }
+  }
+}

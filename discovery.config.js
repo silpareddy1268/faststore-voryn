@@ -58,8 +58,8 @@ module.exports = {
   previewRedirects: {
     home: "/",
     plp: "/electronics",
-    search: "/s?q=orange",
-    pdp: "/mouse/p",
+    search: "/s?q=galaxy",
+    pdp: "/galaxy-s26-ultra-5g-2000033/p",
   },
 
   // Lighthouse CI
@@ -67,7 +67,7 @@ module.exports = {
     server: process.env.BASE_SITE_URL || "http://localhost:3000",
     pages: {
       home: "/",
-      pdp: "/mouse/p",
+      pdp: "/galaxy-s26-ultra-5g-2000033/p",
       collection: "/electronics",
     },
   },
@@ -76,19 +76,19 @@ module.exports = {
   cypress: {
     pages: {
       home: "/",
-      pdp: "/mouse/p",
+      pdp: "/galaxy-s26-ultra-5g-2000033/p",
       collection: "/electronics",
       collection_filtered:
-        "/electronics/?category-1=electronics&marca=faststore&facets=category-1%2Cmarca%27",
-      search: "/s?q=orange",
+        "/electronics?category-1=electronics&fuzzy=0&operator=and&facets=category-1%2Cfuzzy%2Coperator&sort=score_desc&page=0",
+      search: "/s?q=galaxy",
     },
     browser: "electron",
   },
 
-  analytics: {
+  // analytics: {
     // https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation,
-    gtmContainerId: "",
-  },
+    // gtmContainerId: "",
+  // },
 
   experimental: {
     nodeVersion: 24,
