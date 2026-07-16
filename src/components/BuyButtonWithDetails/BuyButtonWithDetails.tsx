@@ -8,7 +8,7 @@ export function BuyButtonWithDetails(props: ButtonProps) {
   // FastStore exposes the data that comes from FastStore API along with FastStore API Extensions inside a provider. Use the usePDP hook to access data from a Product Detail Page (PDP). Refer to: https://developers.vtex.com/docs/guides/faststore/api-extensions-consuming-api-extensions
   const context = usePDP();
 
-  console.log("🚀 ~ PDP context:", context);
+  console.log("🚀 ~ PDP context: silpa", context);
 
   return (
     <section className={styles.buyButtonWithDetails}>

@@ -50,10 +50,10 @@ module.exports = {
 
   // Production URLs
   storeUrl: "https://voryn.vtex.app",
-  secureSubdomain: "https://secure.vtexfaststore.com/",
-  checkoutUrl: "https://secure.vtexfaststore.com/checkout",
-  loginUrl: "https://secure.vtexfaststore.com/api/io/login",
-  accountUrl: "https://secure.vtexfaststore.com/api/io/account",
+  secureSubdomain: "https://voryn.myvtex.com",
+  checkoutUrl: "https://voryn.myvtex.com/checkout",
+  loginUrl: "https://voryn.myvtex.com/api/io/login",
+  accountUrl: "https://voryn.myvtex.com/api/io/account",
 
   previewRedirects: {
     home: "/",
@@ -87,12 +87,14 @@ module.exports = {
 
   analytics: {
     // https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation,
-    gtmContainerId: "GTM-1234567",
+    gtmContainerId: "",
   },
 
   experimental: {
     nodeVersion: 24,
     cypressVersion: 12,
+    enableFaststoreMyAccount: false,
+    optimizedFonts: true
   },
 
   vtexHeadlessCms: {
