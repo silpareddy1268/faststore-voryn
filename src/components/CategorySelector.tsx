@@ -12,18 +12,18 @@ interface Props {
 
 export function CategorySelector({ selectedCategory, onChange }: Props) {
   const [categories, setCategories] = useState<Category[]>([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
-    // Fetch categories from VTEX open API
-    fetch('/api/catalog_system/pub/category/tree/0?depth=1')
-      .then(res => res.json())
-      .then(data => {
-        setCategories(data ?? [])
-        setLoading(false)
-      })
-      .catch(() => setLoading(false))
-  }, [])
+//   useEffect(() => {
+//     // Fetch categories from VTEX open API
+//     fetch('/api/catalog_system/pub/category/tree/0?depth=1')
+//       .then(res => res.json())
+//       .then(data => {
+//         setCategories(data ?? [])
+//         setLoading(false)
+//       })
+//       .catch(() => setLoading(false))
+//   }, [])
 
   return (
     <div>
@@ -34,11 +34,11 @@ export function CategorySelector({ selectedCategory, onChange }: Props) {
         disabled={loading}
       >
         <option value="">Select a category</option>
-        {categories.map(cat => (
+        {/* {categories.map(cat => (
           <option key={cat.id} value={cat.id}>{cat.name}</option>
-        ))}
+        ))} */}
       </select>
-      {loading && <span>Loading categories...</span>}
+      {/* {loading && <span>Loading categories...</span>} */}
     </div>
   )
 }

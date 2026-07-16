@@ -94,7 +94,11 @@ module.exports = {
     nodeVersion: 24,
     cypressVersion: 12,
     enableFaststoreMyAccount: false,
-    optimizedFonts: true
+    optimizedFonts: true,
+    graphqlCacheControl: {
+      maxAge: 5 * 60, // 0 disables cache, 5 * 60 sets maxAge to 5 minutes.
+      staleWhileRevalidate: 60,
+    },
   },
 
   vtexHeadlessCms: {
